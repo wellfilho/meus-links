@@ -1,0 +1,177 @@
+.links-container {
+  max-width: 1120px;
+
+  margin: 32px auto 0 auto;
+}
+
+.links-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.links-header svg {
+  margin-right: 14px;
+}
+
+.links-header svg:hover {
+  animation: back 0.3s both;
+}
+
+@keyframes back {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-8px);
+  }
+}
+
+.links-header h1 {
+  color: #fff;
+}
+
+.links-item {
+  width: 700px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-top: 8px;
+}
+
+.links-item-empty {
+  width: 700px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 8px;
+}
+
+.links-item-empty svg {
+  color: #fff;
+
+  font-size: 200px;
+
+  margin: 100px 0 30px;
+
+  opacity: 0.5;
+
+  animation: shake 1.5s;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.links-item-empty h2 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.links-item:last-child {
+  margin-bottom: 18px;
+}
+
+.link {
+  width: 100%;
+  min-width: 80%;
+  height: 46px;
+
+  border: 0;
+  border-radius: 4px;
+
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+
+  margin-right: 14px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 14px;
+
+  font-size: 18px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.link svg {
+  margin-right: 14px;
+}
+
+.link-delete {
+  background-color: transparent;
+  color: #ff5454;
+
+  border: 2px solid #ff5454;
+  border-radius: 4px;
+
+  height: 46px;
+  width: 46px;
+
+  opacity: 0.7;
+
+  transition: all 0.2s ease-in;
+}
+
+.link-delete:hover {
+  background-color: #ff5454;
+  color: #fff;
+  opacity: 1;
+}
+
+@media (max-width: 750px) {
+  .links-container {
+    width: 90%;
+  }
+
+  .logo h1 {
+    font-size: 40px;
+  }
+
+  .links-item {
+    width: 100%;
+  }
+
+  .link {
+    width: 100%;
+  }
+
+  .links-item-empty {
+    width: 90%;
+  }
+
+  .links-item-empty svg {
+    font-size: 100px;
+
+    margin: 100px 0 30px;
+  }
+  .links-item-empty h2 {
+    color: #fff;
+    font-size: 30px;
+  }
+}

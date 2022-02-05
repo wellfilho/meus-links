@@ -1,0 +1,42 @@
+.menu {
+  position: absolute;
+  top: 20px;
+  right: 10%;
+
+  font-weight: 700;
+
+  display: flex;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.social {
+  margin-right: 14px;
+
+  display: flex;
+  align-items: center;
+}
+
+.social svg {
+  font-size: 24px;
+
+  color: #fff;
+}
+.menu-item {
+  color: #fff;
+  background-color: transparent;
+
+  padding: 12px 24px;
+
+  border: 2px solid #fff;
+  border-radius: 5px;
+
+  transition: all 0.2s ease-in;
+}
+
+.menu-item:hover {
+  color: #132742;
+  background-color: #fff;
+}
